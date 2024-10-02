@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - [Your Restaurant Name]</title>
+  <link rel="stylesheet" href="styles.css">                      
+</head>
+<body>
+
+  <!-- Navigation Menu -->
+  <nav id="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Menu Page Content -->
+  <section id="menu">
+    <h1>Our Menu</h1>
+
+    <!-- Starters Section -->
+    <div class="menu-section">
+      <h2>Starters</h2>
+      <ul>
+        <li>
+          <img src="muttonchops.webp" alt="Mutton Chops" class="menu-img">
+          <span class="dish-name">Mutton Chops</span>
+          <span class="dish-price">Rs.299</span>
+          <div class="quantity-controls">
+            <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+            <input type="text" class="quantity-input" value="0" readonly>
+            <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+          </div>
+        </li>
+        <li>
+          <img src="lemonchickensoup.jpg" alt="Lemon Chicken Soup" class="menu-img">
+          <span class="dish-name">Lemon Chicken Soup</span>
+          <span class="dish-price">Rs.149</span>
+          <div class="quantity-controls">
+            <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+            <input type="text" class="quantity-input" value="0" readonly>
+            <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+          </div>
+        </li>
+        <!-- Add more starters here -->
+      </ul>
+    </div>
+
+    <!-- Mains Section -->
+    <div class="menu-section">
+      <h2>Main Course</h2>
+      <ul>
+        <li>
+          <img src="KadaiChicken.jpg" alt="Kadai Chicken" class="menu-img">
+          <span class="dish-name">Kadai Chicken</span>
+          <span class="dish-price">Rs.449</span>
+          <div class="quantity-controls">
+            <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+            <input type="text" class="quantity-input" value="0" readonly>
+            <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+          </div>
+        </li>
+        <li>
+          <img src="muttonbiryani.jpeg" alt="Mutton Biryani" class="menu-img">
+          <span class="dish-name">Mutton Biryani</span>
+          <span class="dish-price">Rs.599</span>
+          <div class="quantity-controls">
+            <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+            <input type="text" class="quantity-input" value="0" readonly>
+            <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+          </div>
+        </li>
+        <!-- Add more mains here -->
+      </ul>
+    </div>
+
+    <!-- Desserts Section -->
+    <div class="menu-section">
+      <h2>Desserts</h2>
+      <ul>
+        <li>
+          <img src="gulab jamun.jpg" alt="Gulab Jamun" class="menu-img">
+          <span class="dish-name">Gulab Jamun</span>
+          <span class="dish-price">Rs.49</span>
+          <div class="quantity-controls">
+            <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+            <input type="text" class="quantity-input" value="0" readonly>
+            <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+          </div>
+        </li>
+        <li>
+          <img src="rasmalai.jpg" alt="Rasmalai" class="menu-img">
+          <span class="dish-name">Rasmalai</span>
+          <span class="dish-price">Rs.69</span>
+          <div class="quantity-controls">
+            <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+            <input type="text" class="quantity-input" value="0" readonly>
+            <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+          </div>
+        </li>
+        <!-- Add more desserts here -->
+      </ul>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
